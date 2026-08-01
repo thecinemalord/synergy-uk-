@@ -343,28 +343,6 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
   color:var(--gold-deep); font-size:.95rem;
 }
 
-/* ── leadership ─────────────────────────────── */
-.roster{display:grid; grid-template-columns:repeat(2,1fr); gap:0 clamp(2rem,5vw,4.5rem); border-bottom:1px solid var(--rule); margin-top:clamp(2rem,4vw,3rem)}
-@media(max-width:760px){.roster{grid-template-columns:1fr}}
-
-/* ── leadership ─────────────────────────────── */
-.leaders{border-top:1px solid var(--rule); margin-top:clamp(2.25rem,4.5vw,3.25rem)}
-.leader{
-  display:grid; grid-template-columns:1fr auto; gap:.6rem 2.5rem; align-items:baseline;
-  padding:clamp(1.15rem,2.2vw,1.65rem) 0; border-bottom:1px solid var(--rule); position:relative;
-}
-.leader::after{content:""; position:absolute; bottom:-1px; left:0; height:1px; width:0; background:var(--gold); transition:width .9s cubic-bezier(.16,.84,.32,1)}
-.leader:hover::after{width:100%}
-.leader__name{font-family:var(--display); font-weight:400; font-size:clamp(1.15rem,1rem + .6vw,1.5rem); line-height:1.25; margin:0}
-.leader__role{
-  font-family:var(--caps); font-size:.7rem; letter-spacing:.17em; text-transform:uppercase;
-  color:var(--gold); margin:0; text-align:right; line-height:1.95;
-}
-@media(max-width:760px){
-  .leader{grid-template-columns:1fr; gap:.45rem}
-  .leader__role{text-align:left}
-}
-
 /* ── disclosures ────────────────────────────── */
 .legal{margin-top:clamp(3rem,5.5vw,4.5rem); padding-top:clamp(2rem,3.5vw,2.75rem); border-top:1px solid var(--rule-dark)}
 .legal__grid{display:grid; grid-template-columns:1fr 1fr; gap:0 clamp(2rem,5vw,4rem); margin-top:clamp(1.75rem,3.5vw,2.5rem)}
@@ -482,8 +460,6 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
     <a href="#transactions">Transactions</a>
     <a href="#leadership">Leadership</a>
     <a href="#governance">Governance</a>
-    <a href="#leadership">Leadership</a>
-    <a href="#leadership">Leadership</a>
     <a href="#enquiries">Enquiries</a>
   </nav>
 </header>
@@ -497,7 +473,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
       <span class="crest crestmark" role="img" aria-label="The Synergy Pictures peacock crest"></span>
       <div class="lockup">
         <span class="lockup__rule" aria-hidden="true"></span>
-        <h1 class="ident__name">Synergy Pictures U.K<sup>&#8482;</sup></h1>
+        <h1 class="ident__name">Synergy Pictures UK<sup>&#8482;</sup></h1>
         <span class="lockup__rule" aria-hidden="true"></span>
       </div>
       <p class="ident__sub">A Synergy Media Corporation Company</p>
@@ -844,6 +820,26 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 
         </div>
       </div>
+
+      <div class="legal rv">
+        <p class="gov__sub">Legal &amp; disclosures</p>
+        <p class="legal__intro">The following notices apply to this website and to any dealings with Synergy Pictures U.K. arising from it. They should be read in full.</p>
+        <div class="legal__grid">
+        <div class="legal__item"><h4>Regulatory status</h4><p>Synergy Pictures U.K. is not authorised or regulated by the Financial Conduct Authority. It does not carry on any regulated activity within the meaning of the Financial Services and Markets Act 2000, and it does not arrange, advise on or deal in investments for retail clients.</p></div>
+        <div class="legal__item"><h4>No offer or solicitation</h4><p>Nothing on this website constitutes an offer to sell, or the solicitation of an offer to buy, any security, fund interest, or participation in the financing of any picture, in any jurisdiction in which such an offer or solicitation would be unlawful. Any participation is offered only to persons who qualify to receive it, and only by way of separate documentation.</p></div>
+        <div class="legal__item"><h4>No investment advice</h4><p>The content of this website is provided for general information only. It is not investment, legal, tax or accounting advice, and it does not take account of the objectives, financial situation or needs of any particular person. Independent professional advice should be taken before any commitment is made.</p></div>
+        <div class="legal__item"><h4>Risk warning</h4><p>Film finance carries substantial risk. Capital committed to a production may be lost in whole or in part. Interests are illiquid, are not readily realisable, and there is no secondary market for them. Returns depend on the completion, delivery and commercial performance of a picture, none of which can be assured.</p></div>
+        <div class="legal__item"><h4>Past transactions</h4><p>Transaction announcements on this website appear for record purposes only. They describe completed arrangements and are not an indication or forecast of future results. The performance of any past picture is not a guide to the performance of any other.</p></div>
+        <div class="legal__item"><h4>Forward-looking statements</h4><p>Statements concerning slate, strategy, projected budgets or anticipated releases are forward-looking and reflect present expectations. They are subject to change, and to risks and uncertainties outside the firm's control. No obligation is accepted to update them.</p></div>
+        <div class="legal__item"><h4>Accuracy of information</h4><p>Reasonable care is taken to ensure that information on this website is accurate at the time of publication, but no representation or warranty, express or implied, is given as to its accuracy or completeness. The firm accepts no liability for loss arising from reliance on it, save where such liability cannot be excluded by law.</p></div>
+        <div class="legal__item"><h4>Intellectual property</h4><p>The Synergy Pictures name, the peacock crest and all other marks appearing on this website are the property of Synergy Media Corporation and its subsidiaries. Film titles, stills and associated material remain the property of their respective rights holders and are reproduced with permission. No licence is granted by their appearance here.</p></div>
+        <div class="legal__item"><h4>Third-party links</h4><p>This website may link to material published by others. Such links are provided for convenience. The firm does not endorse, and is not responsible for, the content of any external site.</p></div>
+        <div class="legal__item"><h4>Data protection</h4><p>Personal data submitted through this website is processed in accordance with the UK General Data Protection Regulation and the Data Protection Act 2018. Submissions and correspondence are retained only for as long as is necessary for the purpose for which they were provided. Requests concerning personal data may be sent to the firm at the address below.</p></div>
+        <div class="legal__item"><h4>Unsolicited submissions</h4><p>Material sent to the firm without a prior written request is received on the basis that it does not create any confidential relationship or obligation, and that the firm may be developing or financing projects of a similar nature independently. No compensation is payable in respect of unsolicited material.</p></div>
+        <div class="legal__item"><h4>Governing law</h4><p>This website and these notices are governed by the laws of England and Wales. Any dispute arising out of or in connection with them is subject to the exclusive jurisdiction of the courts of England and Wales.</p></div>
+        <div class="legal__item"><h4>Company information</h4><p>Synergy Pictures U.K. is a company registered in England and Wales under company number [00000000], with its registered office at [Registered Address]. It is a subsidiary undertaking of Synergy Media Corporation.</p></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -893,7 +889,6 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
             <li><a href="#transactions">Transactions</a></li>
             <li><a href="#leadership">Leadership</a></li>
             <li><a href="#governance">Governance</a></li>
-            <li><a href="#leadership">Leadership</a></li>
           </ul>
         </div>
         <div>
