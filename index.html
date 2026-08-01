@@ -80,9 +80,9 @@ section{padding-block:clamp(4.25rem,8vw,7.5rem)}
 
 .eyebrow{
   font-family:var(--caps); font-size:.71rem; letter-spacing:.3em; text-transform:uppercase;
-  color:var(--gold); margin:0 0 1.5rem; display:flex; align-items:center; gap:.95rem;
+  color:var(--gold); margin:0 0 1.5rem; display:block;
 }
-.eyebrow::before{content:""; flex:none; width:2.4rem; height:1px; background:currentColor; opacity:.5}
+.eyebrow::before{content:""; display:block; width:2.4rem; height:1px; background:currentColor; opacity:.55; margin:0 0 1rem}
 .band-light .eyebrow{color:var(--gold-deep)}
 
 h2.display{
@@ -197,7 +197,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 }
 
 /* ── the house ──────────────────────────────── */
-.house__grid{display:grid; grid-template-columns:1fr 1.2fr; gap:clamp(2rem,6vw,6rem); align-items:start}
+.house__grid{display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,6vw,6rem); align-items:start}
 .house__grid p{margin:0 0 1.35rem}
 .house__grid p:last-child{margin-bottom:0}
 .dropcap::first-letter{
@@ -207,12 +207,12 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 @media(max-width:768px){.house__grid{grid-template-columns:1fr}}
 
 /* ── mandate / divisions ────────────────────── */
-.mandate__head{display:flex; justify-content:space-between; align-items:flex-end; gap:2.5rem; margin-bottom:clamp(2.5rem,5vw,3.75rem)}
+.mandate__head{display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,4rem); align-items:end; margin-bottom:clamp(2.5rem,5vw,3.75rem)}
 .mandate__head p{margin:0; max-width:36ch; font-size:.95rem; color:var(--ink-dim)}
-@media(max-width:768px){.mandate__head{flex-direction:column; align-items:flex-start}}
+@media(max-width:768px){.mandate__head{grid-template-columns:1fr; align-items:start}}
 
 .desk-row{
-  display:grid; grid-template-columns:4.5rem 1fr 1.05fr; gap:clamp(1.4rem,4vw,3.4rem);
+  display:grid; grid-template-columns:4.5rem 1fr 1fr; gap:clamp(1.4rem,4vw,3.4rem);
   padding-block:clamp(1.9rem,3.4vw,2.9rem); border-top:1px solid var(--rule-dark); position:relative;
 }
 .desk-row:last-of-type{border-bottom:1px solid var(--rule-dark)}
@@ -281,9 +281,9 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 }
 
 /* ── pictures ───────────────────────────────── */
-.pictures__head{display:flex; justify-content:space-between; align-items:flex-end; gap:2.5rem; margin-bottom:clamp(2.25rem,4.5vw,3.25rem)}
+.pictures__head{display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,4rem); align-items:end; margin-bottom:clamp(2.25rem,4.5vw,3.25rem)}
 .pictures__head p{margin:0; max-width:36ch; font-size:.95rem; color:var(--bone-dim)}
-@media(max-width:768px){.pictures__head{flex-direction:column; align-items:flex-start}}
+@media(max-width:768px){.pictures__head{grid-template-columns:1fr; align-items:start}}
 
 .pic{display:flex; flex-direction:column}
 .plate{
@@ -301,7 +301,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 .plate__ph span{font-family:var(--caps); font-size:.65rem; letter-spacing:.24em; text-transform:uppercase; color:rgba(241,233,217,.66)}
 
 .pic__cap{margin-top:1.2rem; padding-top:1.2rem; border-top:1px solid var(--rule)}
-.pic--lead .pic__cap{display:grid; grid-template-columns:1.05fr 1fr; gap:clamp(1.5rem,4vw,3.5rem); align-items:start}
+.pic--lead .pic__cap{display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.5rem,4vw,3.5rem); align-items:start}
 @media(max-width:768px){.pic--lead .pic__cap{grid-template-columns:1fr; gap:1.1rem}}
 .pic__meta{font-family:var(--caps); font-size:.685rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin:0 0 .7rem}
 .pic__title{font-family:var(--display); font-weight:400; font-size:clamp(1.3rem,1.05rem + .85vw,1.9rem); line-height:1.2; margin:0}
@@ -348,7 +348,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 .legal{margin-top:clamp(3rem,5.5vw,4.5rem); padding-top:clamp(2rem,3.5vw,2.75rem); border-top:1px solid var(--rule-dark)}
 .legal__grid{display:grid; grid-template-columns:1fr 1fr; gap:0 clamp(2rem,5vw,4rem); margin-top:clamp(1.75rem,3.5vw,2.5rem)}
 @media(max-width:768px){.legal__grid{grid-template-columns:1fr}}
-.legal__item{break-inside:avoid; padding-bottom:1.6rem}
+.legal__item{break-inside:avoid; padding:1.35rem 0 1.5rem; border-top:1px solid var(--rule-dark)}
 .legal__item h4{
   font-family:var(--caps); font-size:.655rem; letter-spacing:.2em; text-transform:uppercase;
   color:var(--gold-deep); margin:0 0 .55rem; font-weight:400;
@@ -358,7 +358,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 /* ── leadership ─────────────────────────────── */
 .roster{border-top:1px solid var(--rule); margin-top:clamp(2rem,4vw,3rem)}
 .roster__row{
-  display:grid; grid-template-columns:1.05fr 1fr; gap:clamp(1rem,4vw,3rem);
+  display:grid; grid-template-columns:1fr 1fr; gap:clamp(1rem,4vw,3rem);
   align-items:baseline; padding:clamp(1.35rem,2.4vw,1.9rem) 0;
   border-bottom:1px solid var(--rule); position:relative;
 }
@@ -404,7 +404,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 .desk h3{
   font-family:var(--body); font-weight:700; font-size:1.14rem; line-height:1.3;
   margin:0 0 .9rem; padding-bottom:.9rem; border-bottom:1px solid var(--rule);
-  color:var(--bone); letter-spacing:.01em;
+  letter-spacing:.01em;
 }
 .desk p{margin:0 0 1.5rem; color:var(--bone-dim); font-size:.96rem}
 .desk a{
@@ -434,9 +434,9 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 }
 @media(max-width:768px){.foot__top{grid-template-columns:repeat(2,1fr); gap:2rem}}
 @media(max-width:520px){.foot__top{grid-template-columns:1fr; gap:2rem}}
-.foot__brand{display:flex; align-items:center; gap:1.3rem; align-self:start}
+.foot__brand{display:flex; align-items:flex-start; gap:1.3rem; align-self:start}
 .foot__brand .crestmark{width:56px; opacity:.92}
-.foot__brand p{margin:0; font-family:var(--caps); font-size:.7rem; letter-spacing:.24em; text-transform:uppercase; line-height:2}
+.foot__brand p{margin:-.35rem 0 0; font-family:var(--caps); font-size:.7rem; letter-spacing:.24em; text-transform:uppercase; line-height:2}
 .foot__brand span{display:block; color:var(--bone-dim); font-size:.655rem; letter-spacing:.2em}
 .foot__legal{
   margin-top:clamp(2.5rem,4.5vw,3.5rem); padding-top:1.6rem; border-top:1px solid var(--rule);
