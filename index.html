@@ -439,12 +439,20 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 .foot__brand p{margin:-.35rem 0 0; font-family:var(--caps); font-size:.7rem; letter-spacing:.24em; text-transform:uppercase; line-height:2}
 .foot__brand span{display:block; color:var(--bone-dim); font-size:.655rem; letter-spacing:.2em}
 .foot__legal{
-  margin-top:clamp(2.5rem,4.5vw,3.5rem); padding-top:1.6rem; border-top:1px solid var(--rule);
-  font-size:.79rem; line-height:1.85; color:rgba(241,233,217,.74); max-width:92ch;
+  width:100%; margin-top:clamp(2.5rem,4.5vw,3.5rem);
+  padding-top:1.75rem; border-top:1px solid var(--rule);
+  display:grid; grid-template-columns:repeat(3,1fr); gap:0;
+  font-size:.79rem; line-height:1.8; color:rgba(241,233,217,.74);
 }
-.foot__legal p{margin:0 0 .8rem}
+.foot__legal p{margin:0; padding:0 clamp(1.2rem,2.4vw,2.1rem); border-left:1px solid var(--rule)}
+.foot__legal p:first-child{border-left:0; padding-left:0}
+.foot__legal p:last-child{padding-right:0}
+@media(max-width:768px){
+  .foot__legal{grid-template-columns:1fr}
+  .foot__legal p{border-left:0; padding:0 0 .95rem}
+  .foot__legal p:last-child{padding-bottom:0}
+}
 .foot__legal a{color:var(--gold); text-decoration:none; border-bottom:1px solid var(--rule)}
-.foot__legal p:last-child{margin-bottom:0}
 .foot__base{
   margin-top:1.6rem; display:grid; grid-template-columns:1fr auto; gap:.6rem 2rem; align-items:baseline;
   font-size:.775rem; color:rgba(241,233,217,.74);
@@ -728,7 +736,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
       <div class="roster">
         <div class="roster__row rv">
           <p class="roster__name">Tanmay Raj Srivastava</p>
-          <p class="roster__title">Chief Executive Officer<span>Chairman, Synergy Media Corporation</span></p>
+          <p class="roster__title">Chief Executive Officer<span>Chairman of the Synergy Media Corporation</span></p>
         </div>
         <div class="roster__row rv">
           <p class="roster__name">Sky Cheema</p>
@@ -749,6 +757,10 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
         <div class="roster__row rv">
           <p class="roster__name">Pauline Berard</p>
           <p class="roster__title">Head of Government Relations<span>EMEA</span></p>
+        </div>
+        <div class="roster__row rv">
+          <p class="roster__name">Sora Kurosaki</p>
+          <p class="roster__title">Director of Visual Development</p>
         </div>
       </div>
     </div>
@@ -927,7 +939,9 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
     </div>
 
     <div class="foot__legal">
-      <p>Synergy Pictures UK is a company registered in England and Wales, company number [00000000], with its registered office at [Registered Address]. Not authorised or regulated by the Financial Conduct Authority. Nothing on this website constitutes an offer of, or an invitation to acquire, any security or participation in the financing of any picture. Capital is at risk. Full <a href="#governance">regulatory and legal notices</a>.</p>
+      <p>Synergy Pictures UK is a company registered in England and Wales under company number [00000000], with its registered office at [Registered Address]. It is a subsidiary undertaking of Synergy Media Corporation.</p>
+      <p>Not authorised or regulated by the Financial Conduct Authority. Nothing on this website constitutes an offer of, or an invitation to acquire, any security or participation in the financing of any picture.</p>
+      <p>Capital committed to a production is at risk and may be lost in whole or in part. The full <a href="#governance">regulatory and legal notices</a> apply to this website.</p>
     </div>
 
     <div class="foot__base">
