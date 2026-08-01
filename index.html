@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Synergy Pictures U.K. — Production, Structured Finance, International Distribution</title>
-<meta name="description" content="Synergy Pictures U.K. produces, finances and distributes independent feature film and premium documentary. A Synergy Media Corporation company.">
+<title>Synergy Pictures UK — Production, Structured Finance, International Distribution</title>
+<meta name="description" content="Synergy Pictures UK produces, finances and distributes independent feature film and premium documentary. A Synergy Media Corporation company.">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Synergy Pictures U.K.">
-<meta property="og:title" content="Synergy Pictures U.K. — A Synergy Media Corporation Company">
+<meta property="og:site_name" content="Synergy Pictures UK">
+<meta property="og:title" content="Synergy Pictures UK — A Synergy Media Corporation Company">
 <meta property="og:description" content="We make pictures. We finance them. We take them to the world. Production, structured finance and international distribution for independent feature film and premium documentary.">
 <!-- EDIT: replace with your live URL once GitHub Pages is up. Both must be absolute (https://...), not relative. -->
 <meta property="og:url" content="https://REPLACE-ME.github.io/synergy-pictures-uk/">
@@ -37,7 +37,7 @@
   --body:"Libre Caslon Text", Georgia, serif;
   --caps:"Marcellus", Georgia, serif;
 
-  --pad:clamp(1.25rem,5vw,5.5rem);
+  --pad:clamp(1.5rem,5vw,5.5rem);
   --max:1200px;
   --rule:var(--rule);
   --rule-dark:rgba(31,29,51,.22);
@@ -45,6 +45,7 @@
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+body{overflow-x:hidden}
 body{
   margin:0; background:var(--ink); color:var(--bone);
   font-family:var(--body); font-weight:400;
@@ -110,7 +111,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
   text-decoration:none; color:var(--bone-dim); transition:color .3s;
 }
 .mast__nav a:hover,.mast__nav a:focus-visible{color:var(--gold)}
-@media(max-width:900px){.mast__nav{display:none}}
+@media(max-width:1024px){.mast__nav{display:none}}
 
 /* ── the ident ──────────────────────────────── */
 .ident{
@@ -170,8 +171,8 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 }
 .loaded .scroll-cue{animation:fadeUp 1.4s ease 2.35s forwards}
 .scroll-cue::after{content:""; display:block; width:1px; height:32px; margin:.85rem auto 0; background:linear-gradient(var(--rule),transparent)}
-@media(max-width:700px){.lockup__rule{display:none}.lockup{margin-top:1.9rem}}
-@media(max-height:780px) and (min-width:701px){.crest{width:clamp(118px,11.5vw,158px)}.ident__line{margin-top:2.3rem}}
+@media(max-width:768px){.lockup__rule{display:none}.lockup{margin-top:1.9rem}}
+@media(max-height:780px) and (min-width:769px){.crest{width:clamp(118px,11.5vw,158px)}.ident__line{margin-top:2.3rem}}
 
 /* ── ledger strip ───────────────────────────── */
 .ledger{background:var(--ink-deep); padding-block:0; border-block:1px solid var(--rule)}
@@ -187,7 +188,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
   font-family:var(--caps); font-size:.68rem; letter-spacing:.2em; text-transform:uppercase;
   color:var(--bone-dim); margin:0; line-height:1.6;
 }
-@media(max-width:820px){
+@media(max-width:768px){
   .ledger__grid{grid-template-columns:repeat(2,1fr)}
   .ledger__cell{padding-inline:clamp(1rem,4vw,2rem)}
   .ledger__cell:nth-child(3){border-left:0; padding-left:0; border-top:1px solid var(--rule)}
@@ -203,12 +204,12 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
   font-family:var(--display); font-weight:400; color:var(--gold);
   float:left; font-size:3em; line-height:.8; padding:.07em .13em 0 0;
 }
-@media(max-width:880px){.house__grid{grid-template-columns:1fr}}
+@media(max-width:768px){.house__grid{grid-template-columns:1fr}}
 
 /* ── mandate / divisions ────────────────────── */
 .mandate__head{display:flex; justify-content:space-between; align-items:flex-end; gap:2.5rem; margin-bottom:clamp(2.5rem,5vw,3.75rem)}
 .mandate__head p{margin:0; max-width:36ch; font-size:.95rem; color:var(--ink-dim)}
-@media(max-width:820px){.mandate__head{flex-direction:column; align-items:flex-start}}
+@media(max-width:768px){.mandate__head{flex-direction:column; align-items:flex-start}}
 
 .desk-row{
   display:grid; grid-template-columns:4.5rem 1fr 1.05fr; gap:clamp(1.4rem,4vw,3.4rem);
@@ -229,13 +230,13 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
   padding:.58rem 0; border-bottom:1px solid var(--rule-dark); color:rgba(31,29,51,.88);
 }
 .desk-row__list li:last-child{border-bottom:0}
-@media(max-width:940px){.desk-row{grid-template-columns:3rem 1fr}.desk-row__list{grid-column:2/-1; margin-top:.5rem}}
+@media(max-width:1024px){.desk-row{grid-template-columns:3rem 1fr}.desk-row__list{grid-column:2/-1; margin-top:.5rem}}
 
 /* ── tombstones ─────────────────────────────── */
 .tomb-head{margin-bottom:clamp(2.5rem,5vw,3.75rem)}
 .tomb-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.2rem,2.4vw,2.2rem)}
-@media(max-width:960px){.tomb-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:660px){.tomb-grid{grid-template-columns:1fr}}
+@media(max-width:1024px){.tomb-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.tomb-grid{grid-template-columns:1fr}}
 
 .tomb{
   border:1px solid var(--rule); background:var(--ink-raise);
@@ -282,7 +283,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 /* ── pictures ───────────────────────────────── */
 .pictures__head{display:flex; justify-content:space-between; align-items:flex-end; gap:2.5rem; margin-bottom:clamp(2.25rem,4.5vw,3.25rem)}
 .pictures__head p{margin:0; max-width:36ch; font-size:.95rem; color:var(--bone-dim)}
-@media(max-width:820px){.pictures__head{flex-direction:column; align-items:flex-start}}
+@media(max-width:768px){.pictures__head{flex-direction:column; align-items:flex-start}}
 
 .pic{display:flex; flex-direction:column}
 .plate{
@@ -301,14 +302,14 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 
 .pic__cap{margin-top:1.2rem; padding-top:1.2rem; border-top:1px solid var(--rule)}
 .pic--lead .pic__cap{display:grid; grid-template-columns:1.05fr 1fr; gap:clamp(1.5rem,4vw,3.5rem); align-items:start}
-@media(max-width:780px){.pic--lead .pic__cap{grid-template-columns:1fr; gap:1.1rem}}
+@media(max-width:768px){.pic--lead .pic__cap{grid-template-columns:1fr; gap:1.1rem}}
 .pic__meta{font-family:var(--caps); font-size:.685rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin:0 0 .7rem}
 .pic__title{font-family:var(--display); font-weight:400; font-size:clamp(1.3rem,1.05rem + .85vw,1.9rem); line-height:1.2; margin:0}
 .pic__cred{margin:0; font-size:.92rem; color:var(--bone-dim)}
 .pic__cred em{font-style:italic; color:rgba(241,233,217,.82)}
 .pic__sel{margin:.85rem 0 0; font-family:var(--caps); font-size:.665rem; letter-spacing:.17em; text-transform:uppercase; color:rgba(241,233,217,.78); line-height:1.9}
 .pic-pair{display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.2rem,2.6vw,2.4rem); margin-top:clamp(1.8rem,3.5vw,3rem)}
-@media(max-width:780px){.pic-pair{grid-template-columns:1fr}}
+@media(max-width:768px){.pic-pair{grid-template-columns:1fr}}
 
 /* ── press ──────────────────────────────────── */
 .press{background:var(--parchment-2); color:var(--ink); padding-block:clamp(3rem,6vw,5rem); text-align:center;
@@ -327,14 +328,14 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 
 /* ── criteria + governance ──────────────────── */
 .gov__grid{display:grid; grid-template-columns:1fr 1fr; gap:clamp(2.5rem,6vw,5rem); align-items:start}
-@media(max-width:880px){.gov__grid{grid-template-columns:1fr}}
+@media(max-width:768px){.gov__grid{grid-template-columns:1fr}}
 .gov__sub{font-family:var(--caps); font-size:.66rem; letter-spacing:.24em; text-transform:uppercase; color:var(--gold-deep); margin:0 0 1.5rem}
 .dl{margin:0}
 .dl div{padding:.95rem 0; border-bottom:1px solid var(--rule-dark); display:grid; grid-template-columns:10.5rem 1fr; gap:1.4rem}
 .dl div:first-of-type{border-top:1px solid var(--rule-dark)}
 .dl dt{font-family:var(--caps); font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:rgba(31,29,51,.9)}
 .dl dd{margin:0; color:var(--ink-dim); font-size:.97rem}
-@media(max-width:560px){.dl div{grid-template-columns:1fr; gap:.35rem}}
+@media(max-width:520px){.dl div{grid-template-columns:1fr; gap:.35rem}}
 .gov__list{list-style:none; margin:0; padding:0}
 .gov__list li{padding:.95rem 0 .95rem 2.4rem; border-bottom:1px solid var(--rule-dark); color:var(--ink-dim); font-size:.97rem; position:relative}
 .gov__list li:first-child{border-top:1px solid var(--rule-dark)}
@@ -346,7 +347,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 /* ── disclosures ────────────────────────────── */
 .legal{margin-top:clamp(3rem,5.5vw,4.5rem); padding-top:clamp(2rem,3.5vw,2.75rem); border-top:1px solid var(--rule-dark)}
 .legal__grid{display:grid; grid-template-columns:1fr 1fr; gap:0 clamp(2rem,5vw,4rem); margin-top:clamp(1.75rem,3.5vw,2.5rem)}
-@media(max-width:820px){.legal__grid{grid-template-columns:1fr}}
+@media(max-width:768px){.legal__grid{grid-template-columns:1fr}}
 .legal__item{break-inside:avoid; padding-bottom:1.6rem}
 .legal__item h4{
   font-family:var(--caps); font-size:.655rem; letter-spacing:.2em; text-transform:uppercase;
@@ -366,7 +367,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 .roster__name{font-family:var(--display); font-weight:400; font-size:clamp(1.2rem,1rem + .7vw,1.55rem); line-height:1.25; margin:0}
 .roster__title{margin:0; font-family:var(--caps); font-size:.73rem; letter-spacing:.16em; text-transform:uppercase; color:var(--bone); line-height:1.75}
 .roster__title span{display:block; color:var(--bone-dim); letter-spacing:.15em}
-@media(max-width:720px){
+@media(max-width:768px){
   .roster__row{grid-template-columns:1fr; gap:.55rem}
   .roster__name{margin-bottom:.1rem}
 }
@@ -374,7 +375,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 /* ── legal notices ──────────────────────────── */
 .notices{margin-top:clamp(3rem,5.5vw,4.5rem); padding-top:clamp(2rem,3.5vw,2.75rem); border-top:1px solid var(--rule-dark)}
 .notices__grid{columns:2; column-gap:clamp(2.5rem,6vw,5rem); margin-top:2rem}
-@media(max-width:880px){.notices__grid{columns:1}}
+@media(max-width:768px){.notices__grid{columns:1}}
 .notice{break-inside:avoid; margin:0 0 1.9rem}
 .notice h4{
   font-family:var(--caps); font-size:.68rem; letter-spacing:.18em; text-transform:uppercase;
@@ -389,39 +390,54 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
   border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
 }
 .desk{
-  padding:clamp(1.75rem,3vw,2.4rem) clamp(1.4rem,2.6vw,2.2rem);
+  padding:clamp(1.9rem,3vw,2.6rem) clamp(1.5rem,2.8vw,2.4rem);
   border-left:1px solid var(--rule);
+  display:flex; flex-direction:column;
 }
 .desk:first-child{border-left:0; padding-left:0}
 .desk:last-child{padding-right:0}
-@media(max-width:860px){
+@media(max-width:768px){
   .desks{grid-template-columns:1fr}
   .desk{border-left:0; padding-inline:0; border-top:1px solid var(--rule)}
   .desk:first-child{border-top:0}
 }
-.desk h3{font-family:var(--display); font-weight:400; font-size:1.3rem; margin:0 0 .6rem}
-.desk p{margin:0 0 1.15rem; color:var(--bone-dim); font-size:.96rem}
+.desk h3{
+  font-family:var(--body); font-weight:700; font-size:1.14rem; line-height:1.3;
+  margin:0 0 .9rem; padding-bottom:.9rem; border-bottom:1px solid var(--rule);
+  color:var(--bone); letter-spacing:.01em;
+}
+.desk p{margin:0 0 1.5rem; color:var(--bone-dim); font-size:.96rem}
 .desk a{
   font-family:var(--caps); font-size:.745rem; letter-spacing:.15em; text-transform:uppercase;
   color:var(--gold); text-decoration:none; border-bottom:1px solid var(--rule);
   padding-bottom:.25rem; transition:border-color .3s;
+  margin-top:auto; align-self:flex-start; word-break:break-word;
 }
 .desk a:hover,.desk a:focus-visible{border-color:var(--gold)}
 
 /* ── footer ─────────────────────────────────── */
 .foot{background:var(--ink); padding:clamp(3rem,5vw,4.25rem) 0 2.25rem;
   border-top:1px solid var(--rule); box-shadow:0 -3px 0 -2px var(--rule)}
-.foot__top{display:flex; justify-content:space-between; align-items:flex-start; gap:2.5rem; flex-wrap:wrap}
-.foot__brand{display:flex; align-items:center; gap:1.3rem}
+.foot__top{
+  display:grid; grid-template-columns:1.5fr repeat(3,1fr);
+  gap:clamp(2rem,4vw,3.5rem); align-items:start;
+}
+.foot__col h4{font-family:var(--caps); font-size:.68rem; letter-spacing:.24em; text-transform:uppercase; color:var(--gold); margin:0 0 1.1rem; font-weight:400}
+.foot__col ul{list-style:none; margin:0; padding:0}
+.foot__col li{margin-bottom:.55rem; font-size:.89rem; color:var(--bone-dim); line-height:1.6}
+.foot__col li:last-child{margin-bottom:0}
+.foot__col a{text-decoration:none; transition:color .3s}
+.foot__col a:hover,.foot__col a:focus-visible{color:var(--gold)}
+@media(max-width:1024px){
+  .foot__top{grid-template-columns:repeat(3,1fr)}
+  .foot__brand{grid-column:1/-1; padding-bottom:1.75rem; border-bottom:1px solid var(--rule)}
+}
+@media(max-width:768px){.foot__top{grid-template-columns:repeat(2,1fr); gap:2rem}}
+@media(max-width:520px){.foot__top{grid-template-columns:1fr; gap:2rem}}
+.foot__brand{display:flex; align-items:center; gap:1.3rem; align-self:start}
 .foot__brand .crestmark{width:56px; opacity:.92}
 .foot__brand p{margin:0; font-family:var(--caps); font-size:.7rem; letter-spacing:.24em; text-transform:uppercase; line-height:2}
 .foot__brand span{display:block; color:var(--bone-dim); font-size:.655rem; letter-spacing:.2em}
-.foot__cols{display:flex; gap:clamp(2rem,6vw,4.5rem); flex-wrap:wrap}
-.foot__cols h4{font-family:var(--caps); font-size:.68rem; letter-spacing:.24em; text-transform:uppercase; color:var(--gold); margin:0 0 1rem; font-weight:400}
-.foot__cols ul{list-style:none; margin:0; padding:0}
-.foot__cols li{margin-bottom:.55rem; font-size:.89rem; color:var(--bone-dim)}
-.foot__cols a{text-decoration:none; transition:color .3s}
-.foot__cols a:hover{color:var(--gold)}
 .foot__legal{
   margin-top:clamp(2.5rem,4.5vw,3.5rem); padding-top:1.6rem; border-top:1px solid var(--rule);
   font-size:.79rem; line-height:1.85; color:rgba(241,233,217,.74); max-width:92ch;
@@ -430,9 +446,11 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 .foot__legal a{color:var(--gold); text-decoration:none; border-bottom:1px solid var(--rule)}
 .foot__legal p:last-child{margin-bottom:0}
 .foot__base{
-  margin-top:1.6rem; display:flex; justify-content:space-between; gap:1.5rem; flex-wrap:wrap;
+  margin-top:1.6rem; display:grid; grid-template-columns:1fr auto; gap:.6rem 2rem; align-items:baseline;
   font-size:.775rem; color:rgba(241,233,217,.74);
 }
+.foot__base p{margin:0}
+@media(max-width:768px){.foot__base{grid-template-columns:1fr}}
 .foot__base a{text-decoration:none}
 
 /* ── reveal ─────────────────────────────────── */
@@ -452,7 +470,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 <div class="grain" aria-hidden="true"></div>
 
 <header class="mast" id="mast">
-  <a class="mast__brand" href="#top"><span class="crestmark" aria-hidden="true"></span><span>Synergy Pictures U.K.</span></a>
+  <a class="mast__brand" href="#top"><span class="crestmark" aria-hidden="true"></span><span>Synergy Pictures UK</span></a>
   <nav class="mast__nav" aria-label="Primary">
     <a href="#house">The House</a>
     <a href="#pictures">Pictures</a>
@@ -503,7 +521,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
           <h2 class="display">A production house with a balance sheet behind it.</h2>
         </div>
         <div class="rv">
-          <p class="lede dropcap">Synergy Pictures U.K. produces feature film and premium documentary. We also arrange the capital that gets those pictures to camera and license them into world markets &mdash; three functions the industry usually keeps in separate hands, and which we have never seen a reason to separate.</p>
+          <p class="lede dropcap">Synergy Pictures UK produces feature film and premium documentary. We also arrange the capital that gets those pictures to camera and license them into world markets &mdash; three functions the industry usually keeps in separate hands, and which we have never seen a reason to separate.</p>
           <p>The floor comes first. Everything else in this house exists so that a director gets the days, the crew and the cut the picture actually needs. A financier who has never carried a schedule misprices risk; a producer without a sales desk misreads a market. Holding all three together means the money, the making and the selling answer to the same people from first drawdown to final collection.</p>
           <p>We work to a mandate rather than a volume target. A small number of pictures a year, each underwritten on its own merits, structured against verifiable pre-sales and incentives, and reported on quarterly. We are slow to commit and we finish what we start.</p>
         </div>
@@ -533,7 +551,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
             <h3 class="pic__title">[Film Title]</h3>
           </div>
           <div>
-            <p class="pic__cred">Directed by <em>[Name]</em>. Produced by <em>[Name]</em> for Synergy Pictures U.K. [One line on what the picture is and who it is for.]</p>
+            <p class="pic__cred">Directed by <em>[Name]</em>. Produced by <em>[Name]</em> for Synergy Pictures UK [One line on what the picture is and who it is for.]</p>
             <p class="pic__sel">[Festival selection] &middot; [Festival selection]</p>
           </div>
         </div>
@@ -613,7 +631,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
         <ul class="desk-row__list">
           <li>Equity &amp; private placement</li>
           <li>Senior, gap &amp; mezzanine debt</li>
-          <li>U.K. incentive &amp; AVEC modelling</li>
+          <li>UK incentive &amp; AVEC modelling</li>
           <li>Treaty co-production structuring</li>
           <li>Waterfall &amp; recoupment design</li>
           <li>Completion bond liaison</li>
@@ -681,7 +699,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
           <div class="tomb__div" aria-hidden="true"></div>
           <p class="tomb__pre">for the production of</p>
           <p class="tomb__title">[Film Title]</p>
-          <p class="tomb__form">Feature film &middot; U.K./[Territory] treaty</p>
+          <p class="tomb__form">Feature film &middot; UK/[Territory] treaty</p>
           <p class="tomb__role">Co-producer<br>Equity &amp; distribution partner</p>
         </article>
 
@@ -714,7 +732,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
         </div>
         <div class="roster__row rv">
           <p class="roster__name">Sky Cheema</p>
-          <p class="roster__title">President<span>Synergy Pictures U.K.</span></p>
+          <p class="roster__title">President<span>Synergy Pictures UK</span></p>
         </div>
         <div class="roster__row rv">
           <p class="roster__name">Aarushi Bahl</p>
@@ -775,7 +793,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 
           <div class="notice">
             <h4>Regulatory status</h4>
-            <p>Synergy Pictures U.K. is not authorised or regulated by the Financial Conduct Authority. Nothing on this website is intended to constitute, and it should not be relied upon as, investment, tax, accounting or legal advice. Prospective participants should take their own independent professional advice before entering into any transaction.</p>
+            <p>Synergy Pictures UK is not authorised or regulated by the Financial Conduct Authority. Nothing on this website is intended to constitute, and it should not be relied upon as, investment, tax, accounting or legal advice. Prospective participants should take their own independent professional advice before entering into any transaction.</p>
           </div>
 
           <div class="notice">
@@ -810,7 +828,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 
           <div class="notice">
             <h4>Company information</h4>
-            <p>Synergy Pictures U.K. is a company registered in England and Wales under company number [00000000], with its registered office at [Registered Address]. A Synergy Media Corporation company.</p>
+            <p>Synergy Pictures UK is a company registered in England and Wales under company number [00000000], with its registered office at [Registered Address]. A Synergy Media Corporation company.</p>
           </div>
 
           <div class="notice">
@@ -823,9 +841,9 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
 
       <div class="legal rv">
         <p class="gov__sub">Legal &amp; disclosures</p>
-        <p class="legal__intro">The following notices apply to this website and to any dealings with Synergy Pictures U.K. arising from it. They should be read in full.</p>
+        <p class="legal__intro">The following notices apply to this website and to any dealings with Synergy Pictures UK arising from it. They should be read in full.</p>
         <div class="legal__grid">
-        <div class="legal__item"><h4>Regulatory status</h4><p>Synergy Pictures U.K. is not authorised or regulated by the Financial Conduct Authority. It does not carry on any regulated activity within the meaning of the Financial Services and Markets Act 2000, and it does not arrange, advise on or deal in investments for retail clients.</p></div>
+        <div class="legal__item"><h4>Regulatory status</h4><p>Synergy Pictures UK is not authorised or regulated by the Financial Conduct Authority. It does not carry on any regulated activity within the meaning of the Financial Services and Markets Act 2000, and it does not arrange, advise on or deal in investments for retail clients.</p></div>
         <div class="legal__item"><h4>No offer or solicitation</h4><p>Nothing on this website constitutes an offer to sell, or the solicitation of an offer to buy, any security, fund interest, or participation in the financing of any picture, in any jurisdiction in which such an offer or solicitation would be unlawful. Any participation is offered only to persons who qualify to receive it, and only by way of separate documentation.</p></div>
         <div class="legal__item"><h4>No investment advice</h4><p>The content of this website is provided for general information only. It is not investment, legal, tax or accounting advice, and it does not take account of the objectives, financial situation or needs of any particular person. Independent professional advice should be taken before any commitment is made.</p></div>
         <div class="legal__item"><h4>Risk warning</h4><p>Film finance carries substantial risk. Capital committed to a production may be lost in whole or in part. Interests are illiquid, are not readily realisable, and there is no secondary market for them. Returns depend on the completion, delivery and commercial performance of a picture, none of which can be assured.</p></div>
@@ -837,7 +855,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
         <div class="legal__item"><h4>Data protection</h4><p>Personal data submitted through this website is processed in accordance with the UK General Data Protection Regulation and the Data Protection Act 2018. Submissions and correspondence are retained only for as long as is necessary for the purpose for which they were provided. Requests concerning personal data may be sent to the firm at the address below.</p></div>
         <div class="legal__item"><h4>Unsolicited submissions</h4><p>Material sent to the firm without a prior written request is received on the basis that it does not create any confidential relationship or obligation, and that the firm may be developing or financing projects of a similar nature independently. No compensation is payable in respect of unsolicited material.</p></div>
         <div class="legal__item"><h4>Governing law</h4><p>This website and these notices are governed by the laws of England and Wales. Any dispute arising out of or in connection with them is subject to the exclusive jurisdiction of the courts of England and Wales.</p></div>
-        <div class="legal__item"><h4>Company information</h4><p>Synergy Pictures U.K. is a company registered in England and Wales under company number [00000000], with its registered office at [Registered Address]. It is a subsidiary undertaking of Synergy Media Corporation.</p></div>
+        <div class="legal__item"><h4>Company information</h4><p>Synergy Pictures UK is a company registered in England and Wales under company number [00000000], with its registered office at [Registered Address]. It is a subsidiary undertaking of Synergy Media Corporation.</p></div>
         </div>
       </div>
     </div>
@@ -877,10 +895,9 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
     <div class="foot__top">
       <div class="foot__brand">
         <span class="crestmark" aria-hidden="true"></span>
-        <p>Synergy Pictures U.K.<span>A Synergy Media Corporation Company</span></p>
+        <p>Synergy Pictures UK<span>A Synergy Media Corporation Company</span></p>
       </div>
-      <div class="foot__cols">
-        <div>
+      <div class="foot__col">
           <h4>The House</h4>
           <ul>
             <li><a href="#house">About</a></li>
@@ -891,7 +908,7 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
             <li><a href="#governance">Governance</a></li>
           </ul>
         </div>
-        <div>
+      <div class="foot__col">
           <h4>Office</h4>
           <ul>
             <li>[Street Address]</li>
@@ -899,23 +916,22 @@ p.lede{font-size:clamp(1.05rem,1rem + .3vw,1.2rem); line-height:1.68; max-width:
             <li>[+44 (0)20 0000 0000]</li>
           </ul>
         </div>
-        <div>
+      <div class="foot__col">
           <h4>Group</h4>
           <ul>
             <li><a href="#">Synergy Media Corporation</a></li>
             <li><a href="#">LinkedIn</a></li>
             <li><a href="#">Press</a></li>
           </ul>
-        </div>
       </div>
     </div>
 
     <div class="foot__legal">
-      <p>Synergy Pictures U.K. is a company registered in England and Wales, company number [00000000], with its registered office at [Registered Address]. Not authorised or regulated by the Financial Conduct Authority. Nothing on this website constitutes an offer of, or an invitation to acquire, any security or participation in the financing of any picture. Capital is at risk. Full <a href="#governance">regulatory and legal notices</a>.</p>
+      <p>Synergy Pictures UK is a company registered in England and Wales, company number [00000000], with its registered office at [Registered Address]. Not authorised or regulated by the Financial Conduct Authority. Nothing on this website constitutes an offer of, or an invitation to acquire, any security or participation in the financing of any picture. Capital is at risk. Full <a href="#governance">regulatory and legal notices</a>.</p>
     </div>
 
     <div class="foot__base">
-      <p>&copy; <span id="yr">2026</span> Synergy Pictures U.K. All rights reserved.</p>
+      <p>&copy; <span id="yr">2026</span> Synergy Pictures UK All rights reserved.</p>
       <p><a href="#">Privacy Notice</a> &middot; <a href="#">Terms of Use</a> &middot; <a href="#">Modern Slavery Statement</a></p>
     </div>
   </div>
